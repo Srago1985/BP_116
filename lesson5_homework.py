@@ -21,13 +21,6 @@ result = division(c, d)
 print(f"The result of the division is: {result:.2f}" if isinstance(result, float) else result)
 
 # part3
-hours = float(input("Enter the number of hours worked: "))
-wage = float(input("Enter the hourly wage: "))
-bonus = float(input("Enter the bonus (percentage): "))
-tax = float(input("Enter the tax (percentage): "))
-insurance = float(input("Enter the insurance (percentage): "))
-pension = float(input("Enter the pension contribution (percentage): "))
-education = float(input("Enter the education contribution (percentage): "))
 
 def calculate_salary (hours, wage, bonus, tax, insurance, pension, education):
     basic_salary = hours * wage
@@ -36,5 +29,14 @@ def calculate_salary (hours, wage, bonus, tax, insurance, pension, education):
     net_salary = gross_salary - deductions
 
     return net_salary
-net_salary = calculate_salary(hours, wage, bonus, tax, insurance, pension, education)
+
+h = float(input("Enter the number of hours worked: "))
+w = float(input("Enter the hourly wage: "))
+b = float(input("Enter the bonus (percentage): "))
+t = float(input("Enter the tax (percentage): "))
+i = float(input("Enter the insurance (percentage): "))
+p = float(input("Enter the pension contribution (percentage): "))
+e = float(input("Enter the education contribution (percentage): "))
+
+net_salary = calculate_salary(h, w, b, t, i, p, e)
 print(f"The net salary is: {net_salary:.2f}")
