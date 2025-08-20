@@ -54,11 +54,11 @@ def print_number_in_column(number: int):
     if reversed_number == 0:
         print(0)
         return
-    while zeros_in_end > 0:
-            print("0")
-            zeros_in_end -= 1
     while reversed_number > 0:            
         print(reversed_number % 10)
         reversed_number //= 10
+    while zeros_in_end > 0:
+            print("0")
+            zeros_in_end -= 1
 print_number_in_column(12345)
 print_number_in_column(12300)
