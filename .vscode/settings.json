@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "java\\lesson3_loops\\src\\main\\resources",
+        "java\\lesson3_loops\\src\\main\\java\\com\\example"
+    ],
+    "java.project.referencedLibraries": []
+}
