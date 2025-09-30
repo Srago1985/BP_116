@@ -13,6 +13,7 @@
         <module>lesson4</module>
         <module>tank</module>
         <module>lesson5</module>
+        <module>lesson6</module>
     </modules>
 
     <properties>
