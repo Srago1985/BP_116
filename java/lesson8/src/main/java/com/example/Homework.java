@@ -46,27 +46,40 @@ public class Homework {
     }
 
     public static boolean evenToEnd(int[] arr) {
+
         if (arr == null || arr.length == 0) {
             return false;
         }
-        int left = 0;
-        int right = arr.length - 1;
-        while (left < right) {
-            while (left < right && arr[left] % 2 != 0) {
-                left++;
-            }
-            while (left < right && arr[right] % 2 == 0) {
-                right--;
-            }
-            if (left < right) {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++;
-                right--;
-            }
+        boolean sorted = false;
+        for (int i = 0, temp = 0; i < arr.length - 1; i++) {            
+                if (arr[i] % 2 == 0 && arr[i + 1] % 2 != 0) {
+                    temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    sorted = true;
+                }
+            
         }
-        return true;
+        return sorted;
+        // }
+        // int left = 0;
+        // int right = arr.length - 1;
+        // while (left < right) {
+        //     while (left < right && arr[left] % 2 != 0) {
+        //         left++;
+        //     }
+        //     while (left < right && arr[right] % 2 == 0) {
+        //         right--;
+        //     }
+        //     if (left < right) {
+        //         int temp = arr[left];
+        //         arr[left] = arr[right];
+        //         arr[right] = temp;
+        //         left++;
+        //         right--;
+        //     }
+        // }
+        // return true;
     }
 
     public static boolean minToMax(int[] arr) {
