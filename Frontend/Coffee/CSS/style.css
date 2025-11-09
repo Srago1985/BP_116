@@ -10,11 +10,13 @@ body {
 }
 
 .header {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    /* most effective way to center things */
+    most effective way to center things */
+
     height: 400px;
+    
     background-image: url("../Images/coffee-bgnd.jpeg");
     background-position: center;
     /*background-repeat: no-repeat;*/
@@ -22,6 +24,8 @@ body {
 }
 
 h1 {
+    padding-top: 132.8px;
+    /*(height of header (400px) - height of h1 (134.4px))/2 = 132.8px */
     font-size: 100px;
     font-family: "Covered By Your Grace", cursive;
     color: rgba(3, 155, 100, 0.75);
