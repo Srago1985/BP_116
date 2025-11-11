@@ -31,3 +31,32 @@ h1 {
     color: rgba(3, 155, 100, 0.75);
     text-align: center;
 }
+
+ul {
+    position: relative;    
+}
+
+li {
+    position: absolute;
+    width: 48%
+}
+
+li:nth-of-type(odd) {    
+    left: 1%;
+}
+
+li:nth-of-type(even) {    
+    right: 1%;
+}
+
+li:nth-child(1), li:nth-child(2) {
+    top: 0;
+}
+
+li:nth-child(3), li:nth-child(4) {
+    top: 150px;
+}
+
+li:nth-child(5), li:nth-child(6) {
+    top: 300px;
+}
