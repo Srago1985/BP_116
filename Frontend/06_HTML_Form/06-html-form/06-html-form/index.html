@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+<form action="#" method="get">
+    <fieldset>
+        <legend>Personal data</legend>
+        <p>
+            <label for="fName">First name:</label>
+            <input id="fName" type="text" name="firstName" placeholder="Peter">
+        </p>
+        <p>
+            <label>Last name:
+                <input type="text" name="lastName" placeholder="Parker">
+            </label>
+        </p>
+        <p>
+            <label>Email:
+                <input type="email" name="email" placeholder="peter@gmail.com" required>
+            </label>
+        </p>
+        <p>
+            <label>Password:
+                <input type="password" name="password">
+            </label>
+        </p>
+        <p>
+            Gender:
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other">
+                Other
+            </label>
+        </p>
+        <p>
+            Hobby:
+            <label>
+                <input type="checkbox" name="reading">
+                Reading
+            </label>
+            <label>
+                <input type="checkbox" name="swimming">
+                Swimming
+            </label>
+            <label>
+                <input type="checkbox" name="hiking">
+                Hiking
+            </label>
+        </p>
+        <p>
+            <label>Language:
+                <select name="lang">
+                    <option value="en">English</option>
+                    <option value="he">Hebrew</option>
+                    <option value="ru">Russian</option>
+                    <option value="uk">Ukrainian</option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <label>Birthdate:
+                <input type="date" name="birthdate">
+            </label>
+        </p>
+        <p>
+            <label>Comment:
+                <textarea name="comment" cols="30" rows="20"></textarea>
+            </label>
+        </p>
+    </fieldset>
+    <button type="submit">Send</button>
+    <button type="reset">Clear</button>
+    <button type="button">Next</button>
+    <button type="button">Previous</button>
+</form>
+</body>
+</html>
