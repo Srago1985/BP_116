@@ -1,0 +1,25 @@
+.col-12 {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.num_1 {
+    background-color: red;
+}
+
+.num_2 {
+    background-color: orange;
+}
+
+.num_3 {
+    background-color: yellow;
+}
+
+.num_4 {
+    background-color: green;
+}
+
+.num_5 {
+    background-color: blue;
+}
